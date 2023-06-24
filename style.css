@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+  
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    padding-bottom: 10px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+  
+.search-box input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+.search-box button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4caf50;
+    color: #fff;
+    margin-left: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+.weather-card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;
+}
+
+.weather-card .image {
+    width: 120px;
+    height: 100px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-card .image img {
+    width: 100%; /* Ensure the image fills the container */
+    height: 100%; /* Ensure the image fills the container */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    /* border-radius: 50%; Apply a circular border radius */
+  }
+  
+.location {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  
+.temperature {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+  
+.condition {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+  
+.details {
+    margin-top: 20px;
+}
+  
+.humidity, .wind-speed {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+ 
+@media screen and (min-width: 768px) {
+    .container {
+      padding: 40px;
+    }
+  
+    .search-box input {
+      width: 190px;
+    }
+  
+    .weather-card {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
